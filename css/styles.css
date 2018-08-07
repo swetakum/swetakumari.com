@@ -75,16 +75,16 @@ body {
     border: 5px solid #F3EFDF;
     border-radius: 100%;
     object-fit: cover; }
-  .overlayMenu a.contactItem {
+  .overlayMenu .contactItem {
     color: #fff; }
-    .overlayMenu a.contactItem:nth-child(1) {
+    .overlayMenu .contactItem:nth-child(1) {
       margin-top: 0; }
-    .overlayMenu a.contactItem:hover {
+    .overlayMenu .contactItem a:hover {
       color: #515050; }
-      .overlayMenu a.contactItem:hover i {
+      .overlayMenu .contactItem a:hover i {
         background: #515050;
         color: #fff; }
-    .overlayMenu a.contactItem i {
+    .overlayMenu .contactItem i {
       background: #fff; }
   .overlayMenu .nav-menu {
     text-align: center;
@@ -94,7 +94,7 @@ body {
     margin-top: 20px; }
     .overlayMenu .nav-menu:nth-child(1) {
       margin-top: 0; }
-    .overlayMenu .nav-menu:hover {
+    .overlayMenu .nav-menu a:hover {
       color: #515050; }
   .overlayMenu .block {
     visibility: hidden;
@@ -134,9 +134,9 @@ body {
             font-size: 1.5rem; }
         .overlayMenu .nav-profile-block .col {
           padding: 0; }
-        .overlayMenu .nav-profile-block a.contactItem {
+        .overlayMenu .nav-profile-block .contactItem {
           display: inline-flex; }
-          .overlayMenu .nav-profile-block a.contactItem span {
+          .overlayMenu .nav-profile-block .contactItem span {
             display: none; } }
 
 .menuExpanded {
@@ -290,8 +290,6 @@ body {
       height: 20px;
       background: #008e76;
       border: 2px solid #008e76; }
-  .container-fluid .experiences .educationRow .col {
-    padding-bottom: 30px; }
   @media screen and (max-width: 767.98px) {
     .container-fluid .experiences .educationRow .col-md-4 {
       text-align: left;
@@ -315,10 +313,22 @@ body {
     .container-fluid .experiences .educationRow .col {
       border-left: 2px solid #008e76;
       margin-left: 20px;
-      padding-top: 15px; } }
+      padding-top: 10px; } }
 
 .container-fluid .experiences .careerRow {
   margin: 0; }
+  .container-fluid .experiences .careerRow .col-md-5 {
+    padding-left: 60px; }
+  .container-fluid .experiences .careerRow h6 img {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 15px;
+    top: 0; }
+  @media screen and (max-width: 767.98px) {
+    .container-fluid .experiences .careerRow .col-md-7 {
+      margin-top: 20px;
+      padding-left: 60px; } }
 
 .container-fluid .abilities .skillBarWrap {
   margin-top: 1.25rem; }
@@ -348,7 +358,11 @@ body {
       padding-left: 0; }
   .container-fluid .projects .featured_projects .projectWrapper .project_snap {
     flex: 0.4;
-    height: 150px; }
+    height: auto; }
+    .container-fluid .projects .featured_projects .projectWrapper .project_snap img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover; }
   .container-fluid .projects .featured_projects .projectWrapper .projectDesc {
     flex: 0.6;
     padding-left: 50px; }
@@ -466,17 +480,17 @@ body {
     color: #008e76;
     border-bottom: 1px solid #008e76; }
 
-a.contactItem {
+.contactItem {
   font-size: 16px;
   color: #aaa;
   font-family: 'PT Sans', sans-serif;
   display: block;
   margin-top: 20px; }
-  a.contactItem:hover {
+  .contactItem:hover {
     color: #fff; }
-    a.contactItem:hover i {
+    .contactItem:hover i {
       background: #fff; }
-  a.contactItem i {
+  .contactItem i {
     height: 40px;
     width: 40px;
     text-align: center;
@@ -486,3 +500,16 @@ a.contactItem {
     line-height: 40px;
     border-radius: 20px;
     margin-right: 15px; }
+
+@media screen and (min-height: 1000px) {
+  .container-fluid section,
+  .container-fluid section.contact,
+  .container-fluid .about {
+    min-height: 800px;
+    height: auto; }
+  .container-fluid .content-primary,
+  .poster,
+  .menuExpanded,
+  .overlayMenu .content-container {
+    height: 800px;
+    min-height: initial; } }

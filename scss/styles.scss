@@ -91,10 +91,10 @@ body {
         border-radius: 100%;
         object-fit: cover;
     }
-    a.contactItem{
+    .contactItem{
         color: #fff;
         &:nth-child(1){margin-top: 0;}
-        &:hover{
+        a:hover{
             color: $bgDark;
             i{background: $bgDark; color: #fff;}
         }
@@ -107,7 +107,7 @@ body {
         display: block;
         margin-top: 20px;
         &:nth-child(1){margin-top: 0;}
-        &:hover{
+        a:hover{
             color: $bgDark;
         }
     }
@@ -139,7 +139,7 @@ body {
                 h3{font-size: 1.5rem;}
             }
             .col{padding: 0;}
-            a.contactItem{
+            .contactItem{
                 display: inline-flex;
                 span{display: none;}
             }
@@ -311,7 +311,6 @@ body {
                     border: 2px solid $colorPrimary;
                 }
             }
-            .col{padding-bottom: 30px;}
             @media screen and (max-width: $break-md) {
                 .col-md-4{
                     text-align: left;
@@ -337,11 +336,26 @@ body {
                 .col{
                     border-left: 2px solid $colorPrimary;
                     margin-left: 20px;
-                    padding-top: 15px;
+                    padding-top: 10px;
                 }
             }
         }
-        .careerRow{margin: 0;}
+        .careerRow{
+            margin: 0;
+            .col-md-5{
+                padding-left: 60px;
+            }
+            h6 img{
+                height: 30px;
+                width: 30px;
+                position: absolute;
+                left: 15px;
+                top: 0;
+            }
+            @media screen and (max-width: $break-md) {
+                .col-md-7{margin-top: 20px; padding-left: 60px;}
+            }
+        }
     }
     .abilities{
         .skillBarWrap{
@@ -375,8 +389,15 @@ body {
                 }
                 .project_snap{
                     flex: 0.4;
-                    height: 150px;
+                    height: auto;
                     // border: 1px solid;
+                    // max-width: 40%;
+                    // object-position: top;
+                    img{
+                        width: 100%;
+                        max-height: 220px;
+                        object-fit: cover;
+                    }
                 }
                 .projectDesc{
                     flex: 0.6;
@@ -507,7 +528,7 @@ body {
         }
     }
 }
-a.contactItem{
+.contactItem{
     font-size: 16px;
     color: #aaa;
     @include fontPTsans;
@@ -528,4 +549,17 @@ a.contactItem{
         border-radius: 20px;
         margin-right: 15px;
     }
+}
+@media screen and (min-height: 1000px) {
+    .container-fluid section,
+    .container-fluid section.contact,
+    .container-fluid .about{
+        min-height: 800px;
+        height: auto;
+    }
+    .container-fluid .content-primary,
+    .poster,
+    .menuExpanded,
+    .overlayMenu .content-container
+    {height: 800px; min-height: initial;}
 }
