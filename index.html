@@ -23,7 +23,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <!--build:css css/styles.min.css-->
+        <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -46,9 +48,9 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="contactItem"><a class="" href="mailto:swkumari@cs.stonybrook.edu"><i class="fas fa-envelope"></i><span>swkumari@cs.stonybrook.edu</span></a></div>
-                        <div class="contactItem"><a class="" href="https://www.linkedin.com/in/sweta95/"><i class="fab fa-linkedin"></i><span>Linkedin</span></a></div>
-                        <div class="contactItem"><a class="" href="https://github.com/swetakum"><i class="fab fa-github"></i><span>Github</span></a></div>
+                        <div class="contactItem"><a class="" href="mailto:swkumari@cs.stonybrook.edu" target="_blank"><i class="fas fa-envelope"></i><span>swkumari@cs.stonybrook.edu</span></a></div>
+                        <div class="contactItem"><a class="" href="https://www.linkedin.com/in/sweta95/" target="_blank"><i class="fab fa-linkedin"></i><span>Linkedin</span></a></div>
+                        <div class="contactItem"><a class="" href="https://github.com/swetakum" target="_blank"><i class="fab fa-github"></i><span>Github</span></a></div>
                         <!-- <a class="contactItem" href="#"><i class="fab fa-facebook"></i><span>Facebook</span></a>
                         <a class="contactItem" href="#"><i class="fab fa-google"></i><span>Google</span></a> -->
                     </div>
@@ -69,9 +71,9 @@
                 <h4 class="py-4 fontPTsans"><span id="tags">Developer, Poet</span> </h4>
                 <a href="images\SwetaKumari.pdf" class="linkButton" target="_blank"><span>Download Resume</span><i class="fas fa-download"></i></a>
                 <div class="contactItemTop">
-                  <li><a class="" href="mailto:swkumari@cs.stonybrook.edu"><i class="fas fa-envelope"></i></a></li>
-                  <li><a class="" href="https://www.linkedin.com/in/sweta95/"><i class="fab fa-linkedin"></i></a></li>
-                  <li><a class="" href="https://github.com/swetakum"><i class="fab fa-github"></i></a></div></li>
+                  <li><a class="" href="mailto:swkumari@cs.stonybrook.edu" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                  <li><a class="" href="https://www.linkedin.com/in/sweta95/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a class="" href="https://github.com/swetakum" target="_blank"><i class="fab fa-github"></i></a></div></li>
             </div>
             <a href="#about" class="scroll-down down-arrow">
                 <i class="fas fa-chevron-down"></i>
@@ -234,7 +236,7 @@
                         <div class="skillBarWrap">
                             <div class="d-flex justify-content-between">
                                 <span class="progressText"><b>CSS3</b></span>
-                                <!-- <span class="skill-value fontPTsans">25%</span>
+                                <! <span class="skill-value fontPTsans">25%</span>
                             </div>
                             <div class="progress">
                               <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -449,7 +451,9 @@
             </div>
         </section>
     </div>
-    
+    <!--build:css js/script.min.js-->
+        <script src="js/script.js"></script>
+    <!-- endbuild -->
     <script>
     $(document).ready(function(e){
         $("#tags").typed({
