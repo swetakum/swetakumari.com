@@ -192,7 +192,7 @@ body {
     background-color: #F3EFDF; }
   .container-fluid section.contact {
     background: #515050;
-    min-height: 75vh;
+    min-height: 50vh;
     padding-bottom: 50px; }
 
 .container-fluid .content-container {
@@ -480,6 +480,18 @@ body {
     color: #008e76;
     border-bottom: 1px solid #008e76; }
 
+.container-fluid .testimonials blockquote {
+  background: #F3EFDF;
+  padding: 15px;
+  font-size: 14px; }
+  .container-fluid .testimonials blockquote footer {
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: 'Play', sans-serif;
+    color: #008e76; }
+    .container-fluid .testimonials blockquote footer cite {
+      color: #555; }
+
 .contactItem {
   font-size: 16px;
   color: #aaa;
@@ -500,6 +512,27 @@ body {
     line-height: 40px;
     border-radius: 20px;
     margin-right: 15px; }
+
+.contactItemTop li {
+  margin-top: 20px;
+  display: inline-block; }
+
+.contactItemTop i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  background: #fff;
+  color: #515050;
+  font-size: 20px;
+  line-height: 40px;
+  border-radius: 20px;
+  margin-right: 8px; }
+
+.contactItemTop a:hover {
+  color: #515050; }
+  .contactItemTop a:hover i {
+    background: #515050;
+    color: #fff; }
 
 @media screen and (min-height: 1000px) {
   .container-fluid section,
