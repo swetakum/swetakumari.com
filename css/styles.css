@@ -534,6 +534,18 @@ body {
     background: #515050;
     color: #fff; }
 
+  .tag-green{
+    background-color: green;
+  }
+
+  .tag-purple{
+    background-color: #00468b;
+  }
+
+  .tag-orange{
+    background-color: #b36200;
+  }
+
 @media screen and (min-height: 1000px) {
   .container-fluid section,
   .container-fluid section.contact,
